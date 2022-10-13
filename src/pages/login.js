@@ -5,12 +5,12 @@ function Login() {
     <div
         style = {{
             display: 'flex',
-            justifyContent: 'Right',
-            alignItems: 'Right',
+            justifyContent: 'center',
+            alignItems: 'center',
             height: '100vh'
         }}
     >
-        <h1>Teste2</h1>
+        <h1>Teste3</h1>
     </div>
   )
 }

@@ -1,24 +1,23 @@
 import './App.css';
 import React from 'react';
-import Navbar from './components/Navbar';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {Routes, Route } from "react-router-dom";
 
 import Inicio from './pages/inicio';
 import Planos from './pages/planos';
 import Login from './pages/login';
 
+import Navbar from './components/Navbar';
+
 
 function App() {
-  return (
+  return (  
     <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/inicio' component={Inicio} />
-          <Route path='/planos' component={Planos} />
-          <Route path='/login' component={Login} />
-        </Routes>
-      </Router>
+    <Navbar />
+    <Routes>
+        <Route path='/inicio' element={<Inicio/>}/>
+        <Route path='/planos' element={<Planos/>}/>
+        <Route path='/login' element={<Login/>}/>
+    </Routes>
     </>
   );
 }
