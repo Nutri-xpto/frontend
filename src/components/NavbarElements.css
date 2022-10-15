@@ -1,6 +1,9 @@
 
 nav {
   background-image: url("/public/images/vegetables.png");
+  background-size: cover;
+  border-radius: 10px;
+  background-repeat: no-repeat;
   height: 194px;
   overflow: hidden;
   display: flex;
