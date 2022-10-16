@@ -24,10 +24,10 @@ function Login() {
             </div>
 
             <div className='wrap-input'>
-              <input className= {email !== "" ? 'has-val input' : 'input'} 
+              <input className= {password !== "" ? 'has-val input' : 'input'} 
                      type= "password" 
                      value = {password} 
-                     onChange = {e => setEmail(e.target.value)} />
+                     onChange = {e => setPassword(e.target.value)} />
               <span className='focus-input' data-placeholder="Digite sua senha"></span>
             </div>
 
