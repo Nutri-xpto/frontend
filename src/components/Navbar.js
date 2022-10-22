@@ -9,13 +9,13 @@ function NewNavbar() {
     <nav>
       <ul className = "navmenu">
         <li>
-          <NavLink to="/inicio" className = "navlink" >Inicio</NavLink>
+          <NavLink to = "/inicio" className = "navlink"> Inicio </NavLink>
         </li>
         <li>
-          <NavLink to="/planos" className = "navlink" >Planos</NavLink>
+          <NavLink to = "/planos" className = "navlink"> Planos </NavLink>
         </li>
         <li>
-          <NavLink to="/login" className = "navlink">Login</NavLink>
+          <NavLink to = "/login" className = "navlink"> Login </NavLink>
         </li>
       </ul>
     </nav>
