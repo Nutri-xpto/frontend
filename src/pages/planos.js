@@ -10,7 +10,7 @@ function Planos() {
             height: '100vh'
         }}
     >
-        <h1>Teste2</h1>
+        <h1>Teste22</h1>
     </div>
   )
 }
