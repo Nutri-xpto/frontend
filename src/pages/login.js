@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import './login.css';
+import './styles/login.css';
 import {NavLink} from 'react-router-dom'
 
 function Login() {
@@ -8,11 +8,11 @@ function Login() {
   const[password, setPassword] = useState("");
   return (
     <div className ='container'>
-      <div className = 'container-login'>
-        <div className ='wrap-login'>
-          <form className ='login-form'>
+      <div className = 'container-info'>
+        <div className ='wrap-info'>
+          <form className ='info-form'>
 
-            <span className ='login-form-logo'>
+            <span className ='info-form-logo'>
               <img src = {'/images/logo.png'} alt = "logo"/>
             </span>
 
@@ -32,21 +32,26 @@ function Login() {
               <span className = 'focus-input' data-placeholder = "Senha"></span>
             </div>
 
-            <div className = 'container-login-form-btn'>
+            <div className = 'container-form-btn signup'>
               <NavLink to = "/signup">
-                <button className = 'newacc-form-btn'> Cadastro </button>
+                <button className = 'form-btn signup-btn'> Cadastro </button>
               </NavLink>
             </div>
 
-            <div className = 'container-login-form-btn'>
-              <button className = 'login-form-btn'> Login </button>
+            <div className = 'container-form-btn login'>
+              <button className = 'form-btn login-btn'> Login </button>
             </div>
 
           </form>
         </div>
+
       </div>
 
     </div>
+
+    
+
+    
   )
 }
 

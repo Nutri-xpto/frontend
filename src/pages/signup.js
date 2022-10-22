@@ -1,24 +1,42 @@
 import React from 'react';
 import { useState } from 'react';
-import './signup.css';
+import { useRef } from 'react';
+import './styles/login.css';
 
 function SignUp() {
     const[name, setName] = useState("");
     const[email, setEmail] = useState("");
     const[password, setPassword] = useState("");
     const[passwordConfirm, setPasswordConfirm] = useState("");
+    const[code, setCode] = useState("");
+    const[education, setEducation] = useState("");
+    const[clinic_address, setClinicAddress] = useState("");
+    const[additional_info, setAddInfo] = useState("");
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(email);
     }
-    
+    const ref = useRef(null);
+
+    const reff = useRef(null);
+
+    const scrollDown = () => {
+      ref.current?.scrollIntoView({behavior: 'smooth'});
+    }
+
+    const scrollUp = () => {
+      reff.current?.scrollIntoView({behavior: 'smooth'});
+    }
+
     return (
       <div className = 'container'>
-        <div className = 'container-signup'>
-          <div className = 'wrap-login'>
-            <form className = 'signup-form' onSubmit = {handleSubmit}>
+        <div ref={reff} className = 'container-info register'>
+          <div className = 'wrap-info'>
+            <form className = 'info-form' onSubmit = {handleSubmit}>
   
-              <span className = 'signup-form-logo'>
+              <span className = 'info-form-logo'>
                 <img src = {'/images/logo.png'} alt = "logo"/>
               </span>
                 
@@ -54,14 +72,69 @@ function SignUp() {
                 <span className ='focus-input' data-placeholder = "Confirmação de Senha"></span>
               </div>
   
-              <div className = 'container-signup-form-btn'>
-                <button className ='signup-form-btn'> Próxima Etapa </button>
+              <div className = 'container-form-btn next'>
+                <button onClick = {scrollDown} className ='form-btn next-btn'> Próxima Etapa </button>
               </div>
-
             </form>
+            <div className='container-dot'>
+              <span class="dot active"></span>
+              <span class="dot inactive"></span>
+            </div>
           </div>
         </div>
-  
+
+        <div ref = {ref} className='container-info'>
+          <div className = 'wrap-info'>
+
+            <span className = 'info-form-logo'>
+              <img src = {'/images/logo.png'} alt = "logo"/>
+            </span>
+
+            <div className = 'wrap-input'>
+              <input className = {code !== "" ? 'has-val input' : 'input'} 
+                          type = "code" 
+                          value = {code} 
+                          onChange = {e => setCode(e.target.value)} />
+              <span className = 'focus-input' data-placeholder = "Código do Nutricionista"></span>
+            </div>
+
+            <div className = 'wrap-input'>
+              <input className = {education !== "" ? 'has-val input' : 'input'} 
+                          type = "education" 
+                          value = {education} 
+                          onChange = {e => setEducation(e.target.value)} />
+              <span className = 'focus-input' data-placeholder = "Formação"></span>
+            </div>
+
+            <div className = 'wrap-input'>
+              <input className = {clinic_address !== "" ? 'has-val input' : 'input'} 
+                          type = "clinic_address" 
+                          value = {clinic_address} 
+                          onChange = {e => setClinicAddress(e.target.value)} />
+              <span className = 'focus-input' data-placeholder = "Endereço do Consultório"></span>
+            </div>
+
+            <div className = 'wrap-input'>
+              <input className = {additional_info !== "" ? 'has-val input' : 'input'} 
+                          type = "additional_info" 
+                          value = {additional_info} 
+                          onChange = {e => setAddInfo(e.target.value)} />
+              <span className = 'focus-input' data-placeholder = "Informações Adicionais"></span>
+            </div>
+
+            <div className = 'container-form-btn back'>
+                <button onClick = {scrollUp} className = 'form-btn back-btn'> Voltar </button>
+            </div>
+
+            <div className = 'container-form-btn finish'>
+              <button className = 'form-btn finish-btn'> Finalizar Cadastro </button>
+            </div>
+            <div className='container-dot'>
+              <span class="dot inactive"></span>
+              <span class="dot active"></span>
+            </div>
+          </div>
+        </div>
       </div>
     )
 }
