@@ -3,11 +3,11 @@ import React from 'react';
 import {Routes, Route } from "react-router-dom";
 
 import Inicio from './pages/inicio';
-import Planos from './pages/planos';
-import Login from './pages/login';
+import SignIn from './pages/signin';
 import SignUp from './pages/signup';
 
-import Navbar from './components/Navbar';
+
+import Navbar from './components/navbar/Navbar';
 
 
 function App() {
@@ -16,9 +16,8 @@ function App() {
     <Navbar />
     <Routes>
         <Route path = '/inicio' element = {<Inicio/>}/>
-        <Route path = '/planos' element = {<Planos/>}/>
-        <Route path = '/login' element = {<Login/>}/>
         <Route path = '/signup' element = {<SignUp/>}/>
+        <Route path = '/signin' element = {<SignIn/>}/>
     </Routes>
     </>
   );
