@@ -239,3 +239,38 @@
     cursor: pointer;
 }
 
+.list-config {
+    list-style-type: none;
+    font-size: 15px;
+    color: rgba(88, 105, 46, 1);
+    font-family: 'DM Sans';
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+
+.item {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    height: 30px;
+}
+
+.value {
+    text-align: center;
+    margin: 0 auto;
+    height: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(88, 105, 46, 1);
+    font-family: 'DM Sans';
+}
+
+p {
+    text-align: center;
+    color: rgba(88, 105, 46, 1);
+    font-family: 'DM Sans';
+}
