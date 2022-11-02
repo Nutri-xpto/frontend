@@ -4,6 +4,7 @@ import Register from '../components/register/Register'
 function SignUp() {
   return (
     <Register />
+
   )
 }
 

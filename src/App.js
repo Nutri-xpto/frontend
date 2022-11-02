@@ -13,12 +13,15 @@ import Navbar from './components/navbar/Navbar';
 function App() {
   return (  
     <>
+    <div>
     <Navbar />
     <Routes>
+        <Route path = '/' element = {<Inicio/>}/>
         <Route path = '/inicio' element = {<Inicio/>}/>
         <Route path = '/signup' element = {<SignUp/>}/>
         <Route path = '/signin' element = {<SignIn/>}/>
     </Routes>
+    </div>
     </>
   );
 }

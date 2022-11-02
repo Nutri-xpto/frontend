@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Planos() {
+function Plans() {
   return (
     <div
         style = {{
@@ -15,4 +15,4 @@ function Planos() {
   )
 }
 
-export default Planos
+export default Plans
