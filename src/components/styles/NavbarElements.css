@@ -1,8 +1,10 @@
+body {
+  margin: 0px;
+}
 
 nav {
   background-image:  url("/public/images/cover.jpg");
   background-size: cover;
-  border-radius: 5px;
   background-repeat: no-repeat;
   height: 198px;
   overflow: hidden;
@@ -52,7 +54,6 @@ a.navlink:active {
 .navlink:hover {
   transition: all 0.2s ease-in-out;
   background: #fff;
-  color: #808080;
 }
 
 /* small screen button

@@ -1,78 +1,45 @@
 
 import React from "react";
-import {
-  Box,
-  Container,
-  Row,
-  Column,
-  FooterLink,
-  Heading,
-} from  '../styles/FooterStyles';
+//import { NavLink } from "react-router-dom"; still have fix the link being active all the time
+import '../styles/footer.css';
+import { useLocation } from "react-router-dom";
+
   
 const Footer = () => {
+  const { pathname } = useLocation();
+  console.log(pathname);
+  // you can check a more conditions here
+  if (pathname === "/signin" || pathname === "/signup") return null;
   return (
-    <Box>
-      <h1 style={{ color: "green", 
-                   textAlign: "center", 
-                   marginTop: "-50px" }}>
-        GeeksforGeeks: A Computer Science Portal for Geeks
+    <div className="box">
+      <h1 className="text">
+        MyDiet: Uma interação saudável entre nutricionista e paciente!
       </h1>
-      <Container>
-        <Row>
-          <Column>
-            <Heading>About Us</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">Writing</FooterLink>
-            <FooterLink href="#">Internships</FooterLink>
-            <FooterLink href="#">Coding</FooterLink>
-            <FooterLink href="#">Teaching</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Contact Us</Heading>
-            <FooterLink href="#">Uttar Pradesh</FooterLink>
-            <FooterLink href="#">Ahemdabad</FooterLink>
-            <FooterLink href="#">Indore</FooterLink>
-            <FooterLink href="#">Mumbai</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Social Media</Heading>
-            <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>
-                  Facebook
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>
-                  Instagram
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>
-                  Twitter
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>
-                  Youtube
-                </span>
-              </i>
-            </FooterLink>
-          </Column>
-        </Row>
-      </Container>
-    </Box>
+      <span className ='logo_footer'>
+          <img src = {'/images/logo.png'} alt = "logo"/>
+      </span>
+      <div className="container">
+        <div className="row">
+          <div className="column">
+            <div className="heading">Sobre nós</div>
+            <div className="footerlink" href="#">Objetivos</div>
+            <div className="footerlink" href="#">Avaliações</div>
+            <div className="footerlink" href="#">Contato</div>
+          </div>
+          <div className="column">
+            <div className="heading">Planos</div>
+            <div className="footerlink" href="#">Personal + Nutri</div>
+            <div className="footerlink" href="#">Nutri</div>
+            <div className="footerlink" href="#">Nutri Plus</div>
+          </div>
+          <div className="column">
+            <div className="heading">Faça parte</div>
+            <div className="footerlink">Login</div>
+            <div className="footerlink">Cadastro</div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 export default Footer;
