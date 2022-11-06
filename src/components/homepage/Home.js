@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import '../styles/homepage.css'
 import {NavLink} from 'react-router-dom'
 
 
-export class Home extends Component {
-  render() {
+const Home = () =>  {
     return (
     <div className = 'cont'>
         <div className = 'cont-inf'>
@@ -38,7 +37,7 @@ export class Home extends Component {
             </div>
 
             <div className='wrp'>
-              <h1> Como funcionará a interação entre paciente e nutricionista?</h1>
+              <h1 className='title'> Como funcionará a interação entre paciente e nutricionista?</h1>
               <p className ='subtext'> Ao cadastrar um paciente no sistema, seguindo
               o objetivo do mesmo, o nutricionista coleta alguns dados que serão cruciais
               para montar o seu plano alimentar adequadamente. Dados como altura, peso,
@@ -55,7 +54,7 @@ export class Home extends Component {
             </div>
 
             <div className='wrp process'>
-              <h1> Qual o processo realizado após a primeira consulta?</h1>
+              <h1 className='title'> Qual o processo realizado após a primeira consulta?</h1>
               <p className ='subtext'> Tendo os dados coletados na consulta
               inicial, o nutricionista cadastrará sua ficha pessoal com seus objetivos,
               rotina, preferências e restrições alimentares. Desta forma, ele pode prosseguir
@@ -77,7 +76,7 @@ export class Home extends Component {
         </div>
     </div>
     )
-  }
+  
 }
 
 export default Home

@@ -5,11 +5,12 @@ import '../styles/footer.css';
 import { useLocation } from "react-router-dom";
 
   
-const Footer = () => {
+function Footer () {
+  
   const { pathname } = useLocation();
   console.log(pathname);
-  // you can check a more conditions here
   if (pathname === "/signin" || pathname === "/signup") return null;
+
   return (
     <div className="box">
       <h1 className="text">

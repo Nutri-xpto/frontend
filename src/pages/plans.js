@@ -1,17 +1,10 @@
 import React from 'react'
+import NutriHome from '../components/nutrihome/nutrihome';
+
 
 function Plans() {
   return (
-    <div
-        style = {{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh'
-        }}
-    >
-        <h1>Teste22</h1>
-    </div>
+    <NutriHome />
   )
 }
 

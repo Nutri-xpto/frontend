@@ -1,10 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import '../styles/NavbarElements.css'
 import {NavLink} from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 
 
-export class Navbar extends Component {
-  render() {
+const Navbar = () => {
+  const { pathname } = useLocation();
+  console.log(pathname);
+  if (pathname === "/plans") return null;
     return (
       <nav>
       <ul className = "navmenu">
@@ -20,7 +23,7 @@ export class Navbar extends Component {
       </ul>
     </nav>
     )
-  }
+  
 }
 
 export default Navbar

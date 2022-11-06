@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 import '../styles/login.css'
 import Userfront from "@userfront/core";
 
-export class Login extends Component {
+export class Login extends Component  {
 
   state = {
     email: '',

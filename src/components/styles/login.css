@@ -7,6 +7,7 @@
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     padding: 15px;
@@ -249,7 +250,7 @@
     width: 80%;
     margin: 0 auto;
     padding: 0 5px;
-  }
+}
 
 .item {
     font-weight: bold;
@@ -264,13 +265,13 @@
     height: 30px;
 }
 
-h1 {
+.head {
     text-align: center;
     color: rgba(88, 105, 46, 1);
     font-family: 'DM Sans';
 }
 
-p {
+.texts {
     text-align: center;
     color: rgba(88, 105, 46, 1);
     font-family: 'DM Sans';
