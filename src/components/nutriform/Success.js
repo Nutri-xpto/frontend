@@ -16,8 +16,8 @@ export class Success extends Component {
           <span className ='info-form-logo'>
               <img src = {'/images/logo.png'} alt = "logo"/>
             </span>
-            <h1>O seu cadastro foi realizado com sucesso.</h1>
-            <p>Você receberá em seu e-mail mais informações sobre a plataforma.</p>
+            <h1 className='head'>O seu cadastro foi realizado com sucesso.</h1>
+            <p className='texts'>Você receberá em seu e-mail mais informações sobre a plataforma.</p>
           </div>
         </div>
         </div>

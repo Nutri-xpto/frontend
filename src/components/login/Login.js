@@ -1,36 +1,56 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom'
 import '../styles/login.css'
+import Userfront from "@userfront/core";
 
+export class Login extends Component  {
 
+  state = {
+    email: '',
+    password: '',
+  }
+  
+  handleChange = input => e => {
+  this.setState ({[input]: e.target.value}); 
+  }
+  
+  handleSubmit(event) {
+    event.preventDefault();
+    Userfront.login({
+      method: "password",
+      email: this.state.email,
+      password: this.state.password,
+    });
+  }
+  
+    render () {
+      const { email,
+              password} = this.state;
+      const values = {email, password} ;
 
-export default function Login() {
-    const[email, setEmail] = useState("");
-    const[password, setPassword] = useState("");
-    return (
+      return (
       <div className ='container'>
         <div className = 'container-info'>
           <div className ='wrap-info'>
-            <form className ='info-form'>
+            <form className ='info-form' onSubmit={'handleSubmit'} >
   
               <span className ='info-form-logo'>
                 <img src = {'/images/logo.png'} alt = "logo"/>
               </span>
   
               <div className ='wrap-input'>
-                <input className = {email !== "" ? 'has-val input' : 'input'} 
-                       type = "email" 
-                       value = {email} 
-                       onChange = {e => setEmail(e.target.value)} />
+                <input className = {values.email !== "" ? 'has-val input' : 'input'} 
+                       type = "text" 
+                       value = {values.email} 
+                       onChange = {this.handleChange('email')} />
                 <span className ='focus-input' data-placeholder = "E-mail"></span>
               </div>
   
               <div className = 'wrap-input'>
-                <input className = {password !== "" ? 'has-val input' : 'input'} 
+                <input className = {values.password !== "" ? 'has-val input' : 'input'} 
                        type = "password" 
-                       value = {password} 
-                       onChange = {e => setPassword(e.target.value)} />
+                       value = {values.password} 
+                       onChange = {this.handleChange('password')} />
                 <span className = 'focus-input' data-placeholder = "Senha"></span>
               </div>
   
@@ -50,6 +70,8 @@ export default function Login() {
         </div>
   
       </div>
-      
-    )
+      )
+    }
 }
+
+export default Login

@@ -1,9 +1,10 @@
 import React from 'react'
-import Register from '../components/register/Register'
+import Register from '../components/nutriform/Register'
 
 function SignUp() {
   return (
     <Register />
+
   )
 }
 

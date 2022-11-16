@@ -1,10 +1,12 @@
+body {
+  margin: 0px;
+}
 
 nav {
-  background-image: url("/public/images/vegetables.png");
+  background-image:  url("/public/images/cover.jpg");
   background-size: cover;
-  border-radius: 10px;
   background-repeat: no-repeat;
-  height: 194px;
+  height: 198px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -32,7 +34,7 @@ nav ul li {
 
 .navlink {
   color: #58692E;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   font-family: 'DM Sans';
   font-weight: 600;
   display: flex;
@@ -42,6 +44,7 @@ nav ul li {
   padding: 0 4rem;
   cursor: pointer;
   border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(88, 105, 46, 1);
 }
 
 a.navlink:active {
@@ -51,7 +54,6 @@ a.navlink:active {
 .navlink:hover {
   transition: all 0.2s ease-in-out;
   background: #fff;
-  color: #808080;
 }
 
 /* small screen button
