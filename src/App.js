@@ -9,6 +9,8 @@ import Navbar from './components/navbar/Navbar';
 
 import NutriNavbar from './components/navbar/NutriNavbar';
 import NutriHome from './components/nutrihome/nutrihome';
+import RegisterPatient from './components/patientform/RegisterPatient';
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
         <Route path = '/signup' element = {<SignUp/>}/>
         <Route path = '/signin' element = {<SignIn/>}/>
         <Route path = '/plans' element = {<NutriHome/>}/>
+        <Route path = '/about' element = {<RegisterPatient/>}/>
         
     </Routes>
     <Footer />

@@ -1,8 +1,9 @@
 import React from 'react'
+import RegisterPatient from '../components/patientform/RegisterPatient'
 
 function About() {
   return (
-    <div>about</div>
+    <RegisterPatient />
   )
 }
 

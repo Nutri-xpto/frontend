@@ -27,7 +27,7 @@ function NutriHome(){
           </div>
 
           <div className='wrp-nutri-info details'>
-            <div className='details-data'>
+            <div className='details-data-p'>
               <p className='detail'>Total de Pacientes </p>
               <p className= 'detail'>Total de Dietas  </p>
             </div>
@@ -42,12 +42,17 @@ function NutriHome(){
               <p className='parag parag-bord'></p>
             </div>
           </div>
+        </div>
 
+        <div className='cont-nutri-inf-right'>
           <div className='wrp-m-info patient'>
             <span className='patients'>Seus Pacientes</span>
           </div>
+          
           <div className='wrp-m-info patient-options'>
-
+            <span className='optionslink'>Cadastrar Paciente</span>
+            <span className='optionslink'>Cadastrar Dieta do Paciente</span>
+            <span  className='optionslink'>Informações do Paciente</span>
           </div>
 
           <div className='wrp-m-info diet'>
@@ -55,13 +60,13 @@ function NutriHome(){
           </div>
 
           <div className='wrp-m-info diet-options'>
-
+            <span className='optionslink'>Cadastrar Dieta</span>
+            <span className='optionslink'>Alterar Dieta</span>
           </div>
 
           <div className='wrp-m-info chat'>
             <span className='patients'>Chat</span>
           </div>
-
         </div>
       </div>
           )
