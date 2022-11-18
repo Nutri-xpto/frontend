@@ -75,6 +75,11 @@ body {
   font-family: 'DM Sans';
 }
 
+.text-ft-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .logo_footer img {
   height: 190px;
   width: 238px;   

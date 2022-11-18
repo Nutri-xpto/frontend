@@ -7,7 +7,7 @@ import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const { pathname } = useLocation();
   console.log(pathname);
-  if (pathname === "/plans" || pathname === "/about") return null;
+  if (pathname === "/plans" || pathname === "/about" || pathname === "/Patients") return null;
     return (
       <nav>
       <ul className = "navmenu">
