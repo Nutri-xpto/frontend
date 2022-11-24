@@ -5,7 +5,7 @@ import List from "../../components/dummies/List";
 
 
 
-function Patients() {
+export default function Patients() {
 
     const [inputText, setInputText] = useState("");
     let inputHandler = (e) => {
@@ -30,11 +30,24 @@ function Patients() {
         </div>
         <div className='cont-patient-data'>
           <div className="patient-details">
-            <h1>TESTANDO</h1>
+            <span className = 'patient-icon'>
+              <img src = {'/images/user_icon.png'} alt = "icon"/>
+            </span>
+            <ul className='patient-list-config'>
+              <li className='patient-item'>Nome</li>
+              <li className='patient-item'>Email</li>
+              <li className='patient-item'>Idade</li>
+              <li className='patient-item'>Sexo</li>
+              <li className='patient-item'>Altura</li>
+              <li className='patient-item'>Peso</li>
+              <li className='patient-item'>Objetivo</li>
+            </ul>
+            <div className = 'container-record-btn record-update'>
+                <button className = 'record-btn record-update-btn'> Atualizar Ficha </button>
+              </div>
           </div>
         </div>
       </div>
     )
 }
 
-export default Patients

@@ -52,7 +52,7 @@ function NutriHome(){
           
           <div className='wrp-m-info patient-options'>
             <span  className='optionslink'><NavLink to = "/Patients" className= 'text-link'>Lista de Pacientes</NavLink></span>
-            <span className='optionslink'>Cadastrar Novo Paciente</span>
+            <span className='optionslink'><NavLink to = "/about" className = 'text-link'>Cadastrar Novo Paciente</NavLink></span>
             <span className='optionslink'>Cadastrar Dieta do Paciente</span>
           </div>
 
