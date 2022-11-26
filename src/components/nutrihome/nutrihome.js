@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import '../styles/nutrihome.css';
 
 
@@ -50,9 +51,9 @@ function NutriHome(){
           </div>
           
           <div className='wrp-m-info patient-options'>
-            <span className='optionslink'>Cadastrar Paciente</span>
+            <span  className='optionslink'><NavLink to = "/Patients" className= 'text-link'>Lista de Pacientes</NavLink></span>
+            <span className='optionslink'><NavLink to = "/about" className = 'text-link'>Cadastrar Novo Paciente</NavLink></span>
             <span className='optionslink'>Cadastrar Dieta do Paciente</span>
-            <span  className='optionslink'>Informações do Paciente</span>
           </div>
 
           <div className='wrp-m-info diet'>

@@ -1,6 +1,6 @@
 
 import React from "react";
-//import { NavLink } from "react-router-dom"; still have fix the link being active all the time
+import { NavLink } from "react-router-dom"; 
 import '../styles/footer.css';
 import { useLocation } from "react-router-dom";
 
@@ -35,8 +35,8 @@ function Footer () {
           </div>
           <div className="column">
             <div className="heading">Faça parte</div>
-            <div className="footerlink">Login</div>
-            <div className="footerlink">Cadastro</div>
+            <div className="footerlink"><NavLink to = "/signin" className= "text-ft-link">Login</NavLink></div>
+            <div className="footerlink"><NavLink to = "/signup" className= "text-ft-link">Cadastro</NavLink></div>
           </div>
         </div>
       </div>
