@@ -129,7 +129,7 @@ export default function Patient() {
                         <label class="form-control">
                             <input type="checkbox" name="checkbox" />  
                         </label>
-                        <p>+ Adicionar mais metas</p>
+                        <p className='extra-text more'>+ Adicionar mais metas</p>
                     </div>
 
 

@@ -14,6 +14,7 @@ import Patient from './components/nutrihome/Patient';
 
 
 import RegisterPatient from './components/patientform/RegisterPatient';
+import Diets from './components/nutrihome/Diets';
 
 
 
@@ -29,12 +30,11 @@ function App() {
         <Route path = '/inicio' element = {<Inicio/>}/>
         <Route path = '/signup' element = {<SignUp/>}/>
         <Route path = '/signin' element = {<SignIn/>}/>
-        <Route path = '/plans' element = {<NutriHome/>}/>
+        <Route path = '/nutrihome' element = {<NutriHome/>}/>
         <Route path = '/about' element = {<RegisterPatient/>}/>
         <Route path = '/patients' element = {<Patients/>}/>
         <Route path = '/patient' element = {<Patient/>}/>
-
-        
+        <Route path = '/diets' element = {<Diets/>}/>
     </Routes>
     <Footer />
     </div>

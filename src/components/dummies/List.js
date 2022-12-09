@@ -15,7 +15,11 @@ function List(props) {
     return (
         <ul className="record">
             {filteredData.map((item) => (
-                <li className="record-container" key={item.id}>{item.text}<p className="record-info" key={item.id}>{item.age} anos</p></li>
+                <li className="scroll-container" key={item.id}>
+                    {item.text}
+                    <p className="record-info" key={item.id}>{item.age} anos</p>
+                    <p className="record-info" key={item.id}>Objetivo: {item.goal}</p>
+                </li>
             ))}
         </ul>
     )

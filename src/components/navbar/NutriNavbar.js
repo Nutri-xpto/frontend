@@ -11,10 +11,10 @@ function NutriNavbar () {
       <nav>
       <ul className = "navmenu">
         <li>
-          <NavLink to = "/plans" className = "navlink"> Dietas </NavLink> 
+          <NavLink to = "/diets" className = "navlink"> Dietas </NavLink> 
         </li>
         <li>
-          <NavLink to = "" className = "navlink"> Paciente </NavLink>
+          <NavLink to = "/Patients" className = "navlink"> Pacientes </NavLink>
         </li>
         <li>
           <NavLink to = "" className = "navlink"> Loja </NavLink>

@@ -23,7 +23,7 @@ export default function Patients() {
               onChange = {inputHandler}
               variant= "outlined"
               fullWidth
-              label= "Selecione o Paciente"
+              label= "Selecione o paciente"
             />
           </div>
           <List input = {inputText} />

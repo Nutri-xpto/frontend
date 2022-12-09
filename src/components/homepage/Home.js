@@ -30,7 +30,7 @@ const Home = () =>  {
               </div>
               
               <div className = 'container-home-btn plans'>
-                <NavLink to = "/plans">
+                <NavLink to = "/nutrihome">
                   <button className = 'home-btn plans-btn'> Planos </button>
                 </NavLink>
               </div>
