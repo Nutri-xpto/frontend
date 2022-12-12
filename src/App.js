@@ -4,6 +4,8 @@ import {Routes, Route } from "react-router-dom";
 import Inicio from './pages/inicio';
 import SignIn from './pages/signin';
 import SignUp from './pages/signup';
+import Diet from './pages/diet';
+
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 
@@ -35,6 +37,7 @@ function App() {
         <Route path = '/patients' element = {<Patients/>}/>
         <Route path = '/patient' element = {<Patient/>}/>
         <Route path = '/diets' element = {<Diets/>}/>
+        <Route path = '/diet' element = {<Diet/>}/>
     </Routes>
     <Footer />
     </div>

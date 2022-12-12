@@ -45,6 +45,7 @@
 }
 
 .cont-patient-diet {
+    margin: 45px;
     flex-grow: 1;
     overflow: hidden;
 }
@@ -55,13 +56,11 @@
     border-radius: 10px;
     background-color: rgba(88, 105, 46, 0.5);
     overflow: hidden;
-    max-width: 20%;
+    display: inline-block;
+    max-width:30%;
     max-height: 20%;
-    padding: 33px 33px 33px 33px;
+    padding: 55px 55px 55px 55px;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
-}
-
-.diet-head {
 }
 
 .day-text {
@@ -90,12 +89,12 @@
     background-color:  rgba(88, 105, 46, 0.5);
     width: 60%;
     overflow: auto;
-    right: 2;
+    right: 0;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-  
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -137,3 +136,39 @@
     display: table;
     clear: both;
   }
+
+  
+.container-diet-btn {
+    flex-wrap: wrap;
+}
+
+.new-diet {
+    margin-top: 100px;
+    margin-left: 35%;
+}
+
+.new-diet-btn {
+    font-size: 15px;
+    font-family: 'DM Sans';
+    border: none;
+    border-radius: 15px;
+    border: 1px solid #58692e;
+    line-height: 1.2;
+    width: 40%;
+    height: 50px;
+    text-decoration: none;
+}
+
+.diet-btn {
+    color:#58692e;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.new-diet-btn:hover {
+    transition: all 0.2s ease-in-out;
+    background:  #58692e;
+    color: #FFFFFF;
+    cursor: pointer;
+}

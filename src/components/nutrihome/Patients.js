@@ -43,8 +43,8 @@ export default function Patients() {
               <li className='patient-item'>Objetivo</li>
             </ul>
             <div className = 'container-record-btn record-update'>
-                <button className = 'record-btn record-update-btn'> Atualizar Ficha </button>
-              </div>
+              <button className = 'record-btn record-update-btn'> Atualizar Ficha </button>
+            </div>
           </div>
         </div>
       </div>
