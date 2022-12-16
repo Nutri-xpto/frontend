@@ -16,6 +16,14 @@ export class NewDietForm extends Component {
                   <span className = 'info-form-logo'>
                     <img src = {'/images/logo.png'} alt = "logo"/>
                   </span>
+
+                  <div className = 'wrap-input'>
+                    <input className = {values.patientName !== "" ? 'has-val input' : 'input'} 
+                           type = "patientName" 
+                           value = {values.patientName} 
+                           onChange = {handleChange('patientName')} />
+                    <span className = 'focus-input' data-placeholder = "Nome do Paciente"></span>
+                  </div>
                     
                   <div className = 'wrap-input'>
                     <input className = {values.day !== "" ? 'has-val input' : 'input'} 

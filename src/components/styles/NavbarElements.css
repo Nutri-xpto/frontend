@@ -32,6 +32,10 @@ nav ul li {
   white-space: nowrap; 
 }
 
+.navmenu-nutri {
+  padding: 0 20rem;
+}
+
 .navlink {
   color: #58692E;
   background-color: rgba(255, 255, 255, 0.7);

@@ -9,15 +9,18 @@ function NutriNavbar () {
     if (pathname === "/signin" || pathname === "/signup"  || pathname === "/inicio" || pathname === "/") return null;
     return (
       <nav>
-      <ul className = "navmenu">
+      <ul className = "navmenu navmenu-nutri">
+        <li>
+          <NavLink to = "/nutrihome" className = "navlink"> Inicio </NavLink> 
+        </li>
         <li>
           <NavLink to = "/diets" className = "navlink"> Dietas </NavLink> 
         </li>
         <li>
-          <NavLink to = "/Patients" className = "navlink"> Pacientes </NavLink>
+          <NavLink to = "/patients" className = "navlink"> Pacientes </NavLink>
         </li>
         <li>
-          <NavLink to = "" className = "navlink"> Loja </NavLink>
+          <NavLink to = "/store" className = "navlink"> Loja </NavLink>
         </li>
       </ul>
     </nav>

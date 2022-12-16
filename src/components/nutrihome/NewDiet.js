@@ -5,6 +5,7 @@ import Finished from './Finished';
 export class NewDiet extends Component {
     state = {
         step: 1,
+        patientName: '',
         day: '',
         time: '',
         name: '',
@@ -35,8 +36,8 @@ export class NewDiet extends Component {
   
   render() {
     const {step} = this.state;
-    const {day, time, name, ingredients, instructions} = this.state;
-    const values = {day, time, name, ingredients, instructions}
+    const {patientName, day, time, name, ingredients, instructions} = this.state;
+    const values = {patientName, day, time, name, ingredients, instructions}
     switch (step) {
         case 1:
             return (
