@@ -220,6 +220,12 @@
     background-color: transparent;
 }
 
+.back-btn-two {
+    color: #58692e;
+    background-color: transparent;
+    margin-left: 100px;
+}
+
 .form-btn:hover {
     transition: all 0.2s ease-in-out;
     background: transparent;
@@ -235,6 +241,13 @@
 }
 
 .back-btn:hover {
+    transition: all 0.2s ease-in-out;
+    background: #58692e;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.back-btn-two:hover {
     transition: all 0.2s ease-in-out;
     background: #58692e;
     color: #FFFFFF;

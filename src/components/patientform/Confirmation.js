@@ -26,8 +26,8 @@ export class Confirmation extends Component {
         <div className = 'container-info'>
         <div className = 'wrap-info'>
         <span className ='info-form-logo'>
-              <img src = {'/images/logo.png'} alt = "logo"/>
-            </span>
+            <img src = {'/images/logo.png'} alt = "logo"/>
+        </span>
           <ul className='list-config'>
             <li className='item'>Nome</li>
             <li className='value'>{name}</li>

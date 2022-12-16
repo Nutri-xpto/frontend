@@ -24,15 +24,15 @@ const Home = () =>  {
                    com o acompanhamento de um profissional.</p>
               
               <div className = 'container-home-btn about'>
-                <NavLink to = "/about">
+       
                   < button className = 'home-btn about-btn'> Sobre nós </button>
-                </NavLink>
+
               </div>
               
               <div className = 'container-home-btn plans'>
-                <NavLink to = "/plans">
+
                   <button className = 'home-btn plans-btn'> Planos </button>
-                </NavLink>
+
               </div>
             </div>
 

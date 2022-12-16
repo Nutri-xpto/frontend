@@ -19,7 +19,7 @@ function NutriHome(){
             </div>
 
             <div className = 'container-btn signup'>
-                  <button className = 'nutri-btn quit-btn'> Sair </button>
+                  <NavLink to = "/inicio"><button className = 'nutri-btn quit-btn'> Sair </button></NavLink>
               </div>
   
               <div className = 'container-btn login'>
@@ -51,9 +51,8 @@ function NutriHome(){
           </div>
           
           <div className='wrp-m-info patient-options'>
-            <span  className='optionslink'><NavLink to = "/Patients" className= 'text-link'>Lista de Pacientes</NavLink></span>
-            <span className='optionslink'><NavLink to = "/about" className = 'text-link'>Cadastrar Novo Paciente</NavLink></span>
-            <span className='optionslink'>Cadastrar Dieta do Paciente</span>
+            <span  className='optionslink'><NavLink to = "/patients" className= 'text-link'>Lista de Pacientes</NavLink></span>
+            <span className='optionslink'><NavLink to = "/registerpatient" className = 'text-link'>Cadastrar Novo Paciente</NavLink></span>
           </div>
 
           <div className='wrp-m-info diet'>
@@ -61,7 +60,7 @@ function NutriHome(){
           </div>
 
           <div className='wrp-m-info diet-options'>
-            <span className='optionslink'>Cadastrar Dieta</span>
+            <span className='optionslink'><NavLink to = "/diet" className= 'text-link'>Cadastrar Dieta</NavLink></span>
             <span className='optionslink'>Alterar Dieta</span>
           </div>
 

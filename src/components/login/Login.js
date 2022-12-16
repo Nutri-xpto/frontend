@@ -61,7 +61,7 @@ export class Login extends Component  {
               </div>
   
               <div className = 'container-form-btn login'>
-                <button className = 'form-btn login-btn'> Login </button>
+                <NavLink to = "/nutrihome"><button className = 'form-btn login-btn'> Login </button></NavLink>
               </div>
   
             </form>
