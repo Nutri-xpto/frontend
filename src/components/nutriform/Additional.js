@@ -47,6 +47,14 @@ export class Additional extends Component {
           </div>
 
           <div className = 'wrap-input'>
+            <input className = {values.city !== "" ? 'has-val input' : 'input'} 
+                        type = "city" 
+                        value = {values.city} 
+                        onChange = {handleChange('city')} />
+            <span className = 'focus-input' data-placeholder = "Cidade"></span>
+          </div>
+
+          <div className = 'wrap-input'>
             <input className = {values.additional_info !== "" ? 'has-val input' : 'input'} 
                         type = "additional_info" 
                         value = {values.additional_info} 

@@ -10,7 +10,7 @@ import List from "../../components/dummies/List";
 export default function Diets() {
 
   const [inputText, setInputText] = useState("");
-  
+
   let inputHandler = (e) => {
     //convert input text to lower case
     var lowerCase = e.target.value.toLowerCase();

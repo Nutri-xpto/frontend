@@ -16,6 +16,7 @@ export class Register extends Component {
         code: '',
         education: '',
         clinic_address: '',
+        city: '',
         additional_info: '',
     }
 
@@ -46,11 +47,11 @@ export class Register extends Component {
     const { name, email,
             password, password_confirmation,
             code, education, 
-            clinic_address, additional_info} = this.state;
+            clinic_address, city, additional_info} = this.state;
     const values = { name, email,
         password, password_confirmation,
         code, education, 
-        clinic_address, additional_info}
+        clinic_address, city, additional_info}
         
     switch (step) {
         case 1:

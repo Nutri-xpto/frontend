@@ -16,7 +16,7 @@ export class Confirm extends Component {
   render() {
     const { values : { name, email,
                        code, education, 
-                       clinic_address, additional_info } } = this.props;
+                       clinic_address, city, additional_info } } = this.props;
         
     return (
         <div className = 'container'>
@@ -36,6 +36,8 @@ export class Confirm extends Component {
             <li className='value'>{education}</li>
             <li className='item'>Endereço</li>
             <li className='value'>{clinic_address}</li>
+            <li className='item'>Cidade</li>
+            <li className='value'>{city}</li>
             <li className='item'>Informação Adicional</li>
             <li className='value'>{additional_info}</li>
 
