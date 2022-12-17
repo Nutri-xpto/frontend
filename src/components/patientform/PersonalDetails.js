@@ -36,10 +36,10 @@ export class PersonalDetails extends Component {
   
               <div className = 'wrap-input'>
                 <input className = {values.birthday !== "" ? 'has-val input' : 'input'} 
-                       type = "birthday" 
+                       type = "date"
                        value = {values.birthday} 
                        onChange = {handleChange('birthday')} />
-                <span className = 'focus-input' data-placeholder = "Data de Nascimento"></span>
+                <span className = 'focus-input focus-input-date' data-placeholder = "Data de Nascimento"></span>
               </div>
 
               <div className = 'wrap-input'>

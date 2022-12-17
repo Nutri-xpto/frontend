@@ -130,6 +130,10 @@
     -moz-transition:all a.4s;
 }
 
+.focus-input-date::after {
+    color: rgba(88, 105, 46, 0.1);
+}
+
 .input:focus {
     outline: 0;
 }
