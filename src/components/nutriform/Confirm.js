@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { registerNutri } from '../../servers/NutriServer';
 import '../styles/login.css'
 
 
@@ -11,6 +12,11 @@ export class Confirm extends Component {
   back = e => {
     e.preventDefault();
     this.props.prev_step();
+  }
+
+  sendData = (values) => {
+    registerNutri(this.props.values)
+    .then(this.continue);
   }
 
   render() {
@@ -47,7 +53,7 @@ export class Confirm extends Component {
           </div>
 
           <div className = 'container-form-btn finish'>
-            <button onClick = {this.continue} className = 'form-btn finish-btn'> Finalizar Cadastro </button>
+            <button onClick = {this.sendData} className = 'form-btn finish-btn'> Finalizar Cadastro </button>
           </div>
 
         </div>
