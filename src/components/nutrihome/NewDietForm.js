@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
+import { registerDiet } from '../../servers/DietServer';
 
 export class NewDietForm extends Component {
     continue = e => {
         e.preventDefault();
         this.props.next_step();
-      }
+    }
+    sendData = (values) => {
+      registerDiet(this.props.values);
+      this.continue();
+    }
+    
       render() {
         const { values, handleChange } = this.props;
         return (
@@ -65,10 +71,11 @@ export class NewDietForm extends Component {
                     <span className = 'focus-input' data-placeholder = "Modo de Preparo"></span>
                   </div>
 
-                <div className = 'container-form-btn next'>
-                    <button onClick = {this.continue} className ='form-btn next-btn'> Cadastrar Dieta </button>
-                </div>
+
                 </form>
+                <div className = 'container-form-btn next'>
+                    <button onClick = {this.sendData} className ='form-btn next-btn'> Cadastrar Dieta </button>
+                </div>
             </div>
             </div>
             </div>
