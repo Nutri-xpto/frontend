@@ -15,8 +15,8 @@ export class Confirm extends Component {
   }
 
   sendData = (values) => {
-    registerNutri(this.props.values)
-    .then(this.continue);
+    registerNutri(this.props.values);
+    this.continue();
   }
 
   render() {
