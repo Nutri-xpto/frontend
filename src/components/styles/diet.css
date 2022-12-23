@@ -171,3 +171,15 @@
     color: #FFFFFF;
     cursor: pointer;
 }
+
+.info-form-diet {
+    width: 100%;
+}
+
+.info-form-diet-logo img  {
+    height: 190px;
+    width: 238px;   
+    position: relative;
+    top: -5%;
+    right: -10%;
+}

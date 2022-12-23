@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { registerDiet } from '../../servers/DietServer';
+import TextField from "@mui/material/TextField";
+import List from "../../components/dummies/List";
 
 export class NewDietForm extends Component {
     continue = e => {
@@ -10,16 +12,43 @@ export class NewDietForm extends Component {
       registerDiet(this.props.values);
       this.continue();
     }
+    constructor(props) {
+      super(props)
+      this.state = {
+        inputText: ""
+      }
+    }
+     inputHandler = e => {
+      //convert input text to lower case
+      var lowerCase = e.target.value.toLowerCase();
+      this.state.inputText(lowerCase);
+    };
+
+
     
       render() {
         const { values, handleChange } = this.props;
         return (
+          <div className='cont-patients'>
+          <div className='cont-patient-list'>
+            <div className= 'search'>
+              <TextField
+                id= "outlined-basic"
+                onChange = {this.state.inputHandler}
+                variant= "outlined"
+                fullWidth
+                label= "Selecione o paciente"
+              />
+            </div>
+            <List input = {this.state.inputText} />
+          </div>
             <div className = 'container'>
             <div className = 'container-info register'>
               <div className = 'wrap-info'>
-                <form className = 'info-form' onSubmit = {'continue'}>
+                
+                <form className = 'info-form-diet' onSubmit = {'continue'}>
       
-                  <span className = 'info-form-logo'>
+                  <span className = 'info-form-diet-logo'>
                     <img src = {'/images/logo.png'} alt = "logo"/>
                   </span>
 
@@ -79,6 +108,8 @@ export class NewDietForm extends Component {
             </div>
             </div>
             </div>
+            </div>
+
         )
   }
 }
